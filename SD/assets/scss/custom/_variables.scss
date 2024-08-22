@@ -1,0 +1,2066 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* .html{
+  font-size: 62.5%;
+} */
+.logo {
+  width: 14vw;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.ListItem {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27.5px;
+
+
+
+
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-sm,
+.navbar>.container-md,
+.navbar>.container-lg,
+.navbar>.container-xl {
+
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  .navbar .menu-items {
+    width: 100%;
+  }
+}
+
+button.sellTickets {
+  background: black;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27.5px;
+
+  border: none;
+  border-radius: 5px;
+  padding: 0px 3px;
+}
+
+.container {
+
+  width: 100%;
+  margin: auto;
+}
+
+
+
+.navbar {
+
+  //  position: fixed; 
+  width: 100%;
+  padding: 6px !important;
+  background-image: radial-gradient(#DF490F, #BC1818);
+  opacity: 1.85;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+ul.menu-items {
+  order: 2;
+
+  display: flex;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  /* font-size: 1.3rem; */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  /* font-weight: 500; */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #117964;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    color: black;
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* .navbar .menu-items{
+      padding-top: 100px;
+      background: #fff;
+      height: 100vh;
+      max-width: 300px;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 40px;
+      transition: transform 0.5s ease-in-out;
+      box-shadow:  5px 0px 10px 0px #aaa;
+      overflow: scroll;
+  } */
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #f64848;
+    height: 100vh;
+    max-width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    border-radius: 19px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 0px 0px 0px #aaa;
+    overflow: scroll;
+  }
+
+
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+
+}
+
+@media (max-width: 500px) {
+  .navbar-container input[type="checkbox"]:checked~.logo {
+    display: none;
+
+  }
+
+  .logo {
+    width: 150px;
+
+    top: 17px;
+  }
+
+}
+
+/* header styling ends here */
+/* footer styling starts here */
+footer {
+  background-color: #BC1818;
+  padding: 2rem 0;
+  text-align: center;
+  color: #f9f6f6;
+
+}
+
+.copyrightFooter {
+  text-align: start;
+  margin-left: 49px;
+
+}
+
+.FooterLogo {
+  width: 17vw;
+  margin: 19px auto;
+}
+
+.BuyTickets,
+.MyPurhases,
+.tiktok,
+.instagram,
+.ReviewSocialDealer,
+.giveusFeedback,
+.SubmitSupportQuery,
+.Promotions,
+.inviteFriends,
+.MyAccount,
+.myListing,
+.SubmitANewEvent,
+.SellTickets,
+.MyPurhases {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+}
+
+.sell,
+.secure,
+.ContactUs,
+.FollowUs,
+.Social {
+  font-weight: 700;
+  font-size: 29px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 68.5px;
+
+
+
+
+}
+
+a.BuyTickets,
+a.MYPurchase,
+a.MyListing,
+a.SubmitEvent,
+.SellTicketsList,
+a.Review,
+a.TikTokList,
+a.InstagramList,
+a.PromotionVouchers,
+a.InviteFriendsList,
+a.MYAcrrountList,
+.GiveUsFeed,
+.SubmitSupport {
+  color: #f9f6f6;
+  text-decoration: none;
+}
+
+p.newsletter-text {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 32px;
+}
+
+
+.newsletter-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #f9f6f6;
+
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter {
+  margin-bottom: 74px;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: white;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-top: 1px solid #BC1818;
+  border-left: 1px solid #BC1818;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid #BC1818;
+  /* border-color: #BC1818 #BC1818 grey #BC1818 ; */
+  /* border-bottom: 1px solid #cccccc; */
+
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  width: 22%;
+  background: transparent;
+}
+
+/* .newsletter-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+} */
+.newsletter-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 36px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #c74300;
+}
+
+.join-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #e8560da9;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  /* Rounded border */
+  cursor: pointer;
+}
+
+.join-button:hover {
+  background-color: #c74300;
+}
+
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.footer-column {
+  text-align: justify;
+  flex: 1;
+  margin: 10px 3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+
+
+}
+
+
+/* 
+ul li a:hover {
+  text-decoration: underline;
+} */
+@media screen and (max-width:720px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    text-align: center
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .FooterLogo {
+    width: 39vw;
+    margin: 19px auto;
+  }
+
+}
+
+@media (max-width:594px) {
+
+
+  input[type="email"] {
+    padding: 0.5rem;
+    font-size: 17px;
+
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+    /* border-color: #BC1818 #BC1818 grey #BC1818; */
+    /* border-bottom: 1px solid #cccccc; */
+
+    width: 82%;
+    margin-bottom: 34px;
+  }
+
+  .FooterLogo {
+    width: 42vw;
+    margin: 12px auto;
+  }
+
+  .footer-column {
+    text-align: center !important;
+  }
+
+  .copyrightFooter {
+    text-align: center;
+  }
+
+  .newsletter-form button {
+    padding: 1.5rem 1rem;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 36px;
+    width: 138px;
+
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+
+}
+
+/* footer styling ends here  */
+
+// index.vue styling starts here
+/* index.vue (banner) styling starts here */
+.SearchIcon {
+  width: 20px;
+}
+
+.onclickButton {
+  width: 34px;
+  background-color: white;
+}
+
+.search-input::placeholder {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+
+  line-height: 100px;
+  text-align: left;
+
+}
+
+img.SearchFilter {
+  width: 25px;
+}
+
+.VerticalLine {
+  height: 46px;
+  width: 1px;
+}
+
+/* search css */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  padding: 7px 18px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 33px auto;
+}
+
+.search-icon {
+  padding: 10px;
+  color: #333;
+}
+
+.search-input {
+  border: none;
+  padding: 10px;
+  flex-grow: 1;
+  font-size: 1em;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+
+.banner {
+  margin-top: 1px;
+  background-image: radial-gradient(#DF490F 55%, #BC1818 85%);
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.FindBuyersAndSeller {
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+
+  line-height: 32px;
+}
+
+.banner-content {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 2rem;
+  /* background: rgba(0, 0, 0, 0.5);  */
+  /* Optional: Add a dark overlay */
+  border-radius: 10px;
+}
+
+
+.SecureSell {
+  font-family: 'Passion One', sans-serif;
+
+  font-size: 70px;
+  line-height: 58px;
+}
+
+/* .banner p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 1.5rem;
+} */
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+
+
+  color: #ccc;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #E8550D;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.filter-button i {
+  font-size: 16px;
+}
+
+.filter-button:hover {
+  background-color: #c74300;
+}
+
+.additional-text p {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0.5rem 0;
+}
+
+@media (max-width:594px) {
+
+  .banner {
+
+    height: 91vh;
+  }
+
+  .SecureSell {
+    margin-top: 61px;
+  }
+}
+
+
+/* index.vue (banner) styling ends here */
+// suggestedEvent styling starts here
+/* suggestedEvent styling starts here */
+.SuggestedEventContainer {
+  font: 16px / 24px "Montserrat", sans-serif;
+  color: var(--black);
+  background: var(--platinum);
+  margin: 50px 0;
+  cursor: move;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 50px auto;
+}
+
+@media (max-width:500px) {
+
+  .SuggestedEvent {
+
+
+    font-size: 25px !important;
+  }
+}
+
+/* suggestedEvent styling starts here  */
+// suggestedEvent styling starts here
+
+/* PopularEvent styling starts here */
+
+/* :root {
+  --red: #ef233c;
+  --darkred: #c00424;
+  --platinum: #e5e5e5;
+  --black: #2b2d42;
+  --white: #fff;
+  --thumb: #edf2f4;
+} */
+/* .container{
+  max-width: 1200;
+  margin: 0 auto;
+ } */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.Event {
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.Calender,
+.Location {
+  width: 16px;
+}
+
+.iconWithText[data-v-866f9c52] {
+  margin-top: 9px;
+}
+
+.venue {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+}
+
+.arrow {
+  width: 49px;
+  margin-right: 20px;
+}
+
+.DateCard {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20.38px;
+  text-align: left;
+
+}
+
+.SuggestedEvent {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 43px;
+  font-weight: 600;
+  line-height: 27.5px;
+  text-align: left;
+
+}
+
+.popularEventContainer {
+  font: 16px / 24px "Montserrat", sans-serif;
+
+  margin: 50px auto;
+  cursor: move;
+  max-width: 1400px;
+  padding: 0 15px;
+
+}
+
+.lovelandFestival {
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30.48px;
+  text-align: left;
+
+
+}
+
+/* body {
+  font: 16px / 24px  "Montserrat", sans-serif;
+;
+  color: var(--black);
+  background: var(--platinum);
+  margin: 50px 0;
+} */
+
+.popularEventContainer {
+  font: 16px / 24px "Montserrat", sans-serif;
+  ;
+  color: var(--black);
+  background: var(--platinum);
+  margin: 50px 0;
+  cursor: move;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+} */
+
+.cards {
+  display: flex;
+  padding: 0px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 10px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  transition: all 0.2s;
+}
+
+hr {
+  // margin-top: 50px !important;
+
+  margin-bottom: 50px !important;
+}
+
+.card:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .card:hover {
+  color: var(--white);
+  background: var(--red);
+} */
+
+.card .card-title {
+  font-size: 19px;
+}
+
+.card .card-content {
+
+  margin: 11px 0;
+  max-width: 85%;
+}
+
+.card .card-link-wrapper {
+  margin-top: auto;
+}
+
+.card .card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(144, 0, 0);
+  background: var(--red);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.card:hover .card-link {
+  background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar {
+  height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+
+@media (min-width: 500px) {
+  .card {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    flex-basis: calc(calc(100% / 3) - 20px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .card {
+    flex-basis: calc(33% - 30px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+
+/* PopularEvent styling starts here  */
+/* getPersonal styling starts here */
+/* GetPersonal components starts here */
+button#ButtonsGetPErsonalId {
+  margin-left: 19px;
+}
+
+.ButtonGetPersonal {
+  color: white;
+  border: none;
+  border-radius: 40px;
+  // opacity: 0px;
+  background: #e8550d;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 6px 19px;
+}
+
+.GetPersonal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px;
+  font-weight: 600;
+  line-height: 17.5px;
+  text-align: left;
+}
+
+
+
+
+.selectYourprefrence {
+  font-family: Montserrat;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 43px;
+  text-align: left;
+}
+
+.getPersonal {
+  margin: 50px auto;
+  /* margin-bottom: 37px; */
+  max-width: 75%;
+  padding: 22px 17px;
+  /* margin-bottom: 37px; */
+  background-color: #ececec;
+}
+
+@media screen and (max-width: 1000px) {
+  button#ButtonsGetPErsonalId {
+    margin-left: 0px;
+    margin: 6px;
+  }
+
+  .selectYourprefrence {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .GetPersonal {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+  }
+}
+
+/* GetPersonal components ends here  */
+
+
+/* getPersonal styling ends here  */
+// four button styling starts here
+
+.ButtonFour {
+  color: white;
+  border: none;
+  padding: 7px 28px;
+  opacity: 0px;
+  background: #e8550d;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 40px;
+}
+
+// .buttonsFour {
+//   justify-content: space-evenly;
+//   display: flex;
+//   margin: 31px auto;
+// }
+.buttonsFour {
+  // margin-left: 135px;
+  gap: 46px;
+
+  margin-top: 50px;
+  /* justify-content: space-evenly; */
+  display: flex;
+}
+
+@media screen and (max-width:1350px) {
+  .buttonsFour {
+    margin-left: 0px;
+
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 810px) {
+  .buttonsFour {
+    flex-direction: column;
+  }
+
+  .ButtonFour {
+    margin-bottom: 8px;
+  }
+}
+
+// four button styling ends here
+// discover more event styling starts here
+
+.iconWithText.d-flex {
+  margin-bottom: 5px;
+}
+
+.Event {
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.Calender,
+.Location {
+  width: 16px;
+}
+
+.iconWithText[data-v-866f9c52] {
+  margin-top: 9px;
+}
+
+.venue {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+}
+
+.arrow {
+  width: 43px;
+  margin-right: 17px;
+}
+
+.DateCard {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+}
+
+.SuggestedEvent {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 32px;
+  font-weight: 650;
+  line-height: 27.5px;
+  text-align: left;
+}
+
+.lovelandFestival {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30.48px;
+  text-align: left;
+}
+
+.DiscoverMoreEventContainer {
+  font: 16px / 24px "Montserrat", sans-serif;
+  color: var(--black);
+  background: var(--platinum);
+  margin: 50px 0;
+  cursor: move;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 65px auto;
+}
+
+/* body {
+  font: 16px / 24px  "Montserrat", sans-serif;
+;
+  color: var(--black);
+  background: var(--platinum);
+  margin: 50px 0;
+} */
+
+/* .container {
+  cursor: move;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+} */
+
+/* h2 {
+  font-size: 32px;
+  margin-bottom: 1em;
+} */
+
+.cards {
+  display: flex;
+  padding: 0px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 10px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  scroll-snap-align: start;
+  transition: all 0.2s;
+}
+
+.card:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .card:hover {
+  color: var(--white);
+  background: var(--red);
+} */
+
+.card .card-title {
+  font-size: 19px;
+}
+
+.card .card-content {
+  margin: 11px 0;
+  max-width: 85%;
+}
+
+.card .card-link-wrapper {
+  margin-top: auto;
+}
+
+.card .card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(144, 0, 0);
+  background: var(--red);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.card:hover .card-link {
+  background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar {
+  height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar-track {
+  background: var(--thumb);
+}
+
+@media (min-width: 500px) {
+  .card {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    flex-basis: calc(calc(100% / 3) - 20px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .card {
+    flex-basis: calc(33% - 30px);
+  }
+
+  .card:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+
+// login vue styling starts here
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+// .page-width {
+//   padding: 15px;
+//   margin: 0 auto;
+//   background: #e33535;
+// }
+
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 10px 20px;
+//   color: black;
+//   position: relative;
+// }
+
+.auth-listen button {
+  border-radius: 5px;
+  padding: 0px 6px;
+  color: white;
+  background: #000000 !important;
+  border: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.auth-listen button i.fas.fa-plus.me-2 {
+  background: rgba(255, 255, 255, 0.2);
+  margin-right: 25px;
+  padding: 7px;
+  border-radius: 14px;
+}
+
+.auth button {
+  font-weight: 600;
+  border: 0;
+  background: white;
+  font-size: 16px;
+}
+
+.auth {
+  margin-right: 20px;
+}
+
+// .logo img {
+//   height: 40px;
+// }
+
+// nav {
+//   flex-grow: 1;
+//   margin-left: 20px;
+// }
+
+// ul.menu {
+//   justify-content: end;
+//   list-style: none;
+//   display: flex;
+//   padding: 0;
+//   margin: 0;
+// }
+
+
+
+// ul.menu > li.submenu:hover > ul.dropdown {
+//   display: block;
+// }
+
+// ul.dropdown {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   background-color: #444;
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+//   width: 150px;
+//   z-index: 1000;
+// }
+
+// ul.dropdown > li > a {
+//   color: white;
+//   text-decoration: none;
+//   padding: 10px;
+//   display: block;
+// }
+
+// ul.dropdown > li > a:hover {
+//   background-color: #555;
+// }
+
+.auth a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.auth a:hover {
+  background-color: white;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: black;
+  border-radius: 2px;
+  display: block;
+  height: 3px;
+  margin: 5px;
+  width: 25px;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.drawer.active {
+  right: 0;
+}
+
+.drawer .drawer-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawer .close-drawer {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.drawer .submenu>.dropdown {
+  display: none;
+}
+
+.drawer .submenu.active>.dropdown {
+  display: block;
+}
+
+.divider-col {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 100%;
+  background-color: #bc1818;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .auth {
+    display: none;
+  }
+
+  .auth-listen {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .drawer ul.menu {
+    display: block;
+  }
+}
+
+/* p {
+  display: flex;
+  flex-direction: row;
+}
+p:before,
+p:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+  margin: auto;
+} */
+.otherlogin {
+  display: flex;
+  flex-direction: row;
+}
+
+.otherlogin:before,
+.otherlogin:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+  margin: auto;
+}
+
+.login-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.login-icons .icon {
+  color: #444;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.login-icons .icon:hover {
+  color: #e33535;
+}
+
+.login-icons .icon img {
+  height: 50px;
+  /* Adjust height */
+  width: 50px;
+  /* Adjust width */
+}
+
+// login vue css ends here
+// password vue starts here
+// signup button
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+
+.divider-col {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.loginMethod {
+  display: flex;
+  flex-direction: row;
+}
+
+.loginMethod:before,
+.loginMethod:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+  margin: auto;
+}
+
+.login-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.login-icons .icon {
+  color: #444;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.login-icons .icon:hover {
+  color: #e33535;
+}
+
+.login-icons .icon img {
+  height: 50px;
+  /* Adjust height */
+  width: 50px;
+  /* Adjust width */
+}
+
+// password vue styling starts here
+// <style scoped>
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+// .page-width {
+//   padding: 15px;
+//   margin: 0 auto;
+//   background: #e33535;
+// }
+
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 10px 20px;
+//   color: black;
+//   position: relative;
+// }
+
+// .auth-listen button {
+//   border-radius: 5px;
+//   padding: 0px 6px;
+//   color: white;
+//   background: #000000 !important;
+//   border: 0;
+//   font-size: 14px;
+//   font-weight: 700;
+// }
+
+// .auth-listen button i.fas.fa-plus.me-2 {
+//   background: rgba(255, 255, 255, 0.2);
+//   margin-right: 25px;
+//   padding: 7px;
+//   border-radius: 14px;
+// }
+
+// .auth button {
+//   font-weight: 600;
+//   border: 0;
+//   background: white;
+//   font-size: 16px;
+// }
+
+// .auth {
+//   margin-right: 20px;
+// }
+
+// .logo img {
+//   height: 40px;
+// }
+
+// nav {
+//   flex-grow: 1;
+//   margin-left: 20px;
+// }
+
+// ul.menu {
+//   justify-content: end;
+//   list-style: none;
+//   display: flex;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// ul.menu > li {
+//   position: relative;
+//   margin-right: 20px;
+// }
+
+// ul.menu > li > a {
+//   font-family: "Montserrat", sans-serif;
+//   font-weight: 700;
+//   font-size: 21px;
+//   line-height: 27.5px;
+//   color: white;
+//   text-decoration: none;
+//   padding: 10px 15px;
+//   display: block;
+// }
+
+// ul.menu > li.submenu:hover > ul.dropdown {
+//   display: block;
+// }
+
+// ul.dropdown {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   background-color: #444;
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+//   width: 150px;
+//   z-index: 1000;
+// }
+
+// ul.dropdown > li > a {
+//   color: white;
+//   text-decoration: none;
+//   padding: 10px;
+//   display: block;
+// }
+
+// ul.dropdown > li > a:hover {
+//   background-color: #555;
+// }
+
+// .auth a {
+//   color: black;
+//   text-decoration: none;
+//   padding: 10px 15px;
+//   border: 1px solid white;
+//   border-radius: 5px;
+// }
+
+// .auth a:hover {
+//   background-color: white;
+//   color: #333;
+// }
+
+// .menu-toggle {
+//   display: none;
+//   flex-direction: column;
+//   cursor: pointer;
+// }
+
+// .menu-toggle span {
+//   background: black;
+//   border-radius: 2px;
+//   display: block;
+//   height: 3px;
+//   margin: 5px;
+//   width: 25px;
+// }
+
+// .drawer {
+//   position: fixed;
+//   top: 0;
+//   right: -100%;
+//   height: 100%;
+//   width: 250px;
+//   background-color: #333;
+//   color: white;
+//   transition: right 0.3s ease;
+//   z-index: 1000;
+//   padding: 20px;
+// }
+
+// .drawer.active {
+//   right: 0;
+// }
+
+// .drawer .drawer-header {
+//   display: flex;
+//   justify-content: flex-end;
+// }
+
+// .drawer .close-drawer {
+//   background: none;
+//   border: none;
+//   font-size: 24px;
+//   color: white;
+//   cursor: pointer;
+// }
+
+// .drawer .submenu > .dropdown {
+//   display: none;
+// }
+
+// .drawer .submenu.active > .dropdown {
+//   display: block;
+// }
+
+// .divider-col {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .vertical-divider {
+//   width: 1px;
+//   height: 100%;
+//   background-color: #bc1818;
+// }
+
+// @media (max-width: 768px) {
+//   .menu {
+//     display: none;
+//   }
+//   .auth {
+//     display: none;
+//   }
+//   .auth-listen {
+//     display: none;
+//   }
+
+//   .menu-toggle {
+//     display: flex;
+//   }
+
+//   .drawer ul.menu {
+//     display: block;
+//   }
+// }
+
+
+// .login-icons {
+//   display: flex;
+//   justify-content: space-around;
+//   margin-top: 15px;
+// }
+
+// .login-icons .icon {
+//   color: #444;
+//   font-size: 24px;
+//   transition: color 0.3s;
+// }
+
+// .login-icons .icon:hover {
+//   color: #e33535;
+// }
+
+// .login-icons .icon img {
+//   height: 50px; /* Adjust height */
+// width: 50px; /* Adjust width */
+// }
+// </style>
+
+// password vue styling ends here
+
+// verification.vue styling starts here
+// <style scoped>
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+// .page-width {
+//   padding: 15px;
+//   margin: 0 auto;
+//   background: #e33535;
+// }
+
+// .header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 10px 20px;
+//   color: black;
+//   position: relative;
+// }
+
+// .auth-listen button {
+//   border-radius: 5px;
+//   padding: 0px 6px;
+//   color: white;
+//   background: #000000 !important;
+//   border: 0;
+//   font-size: 14px;
+//   font-weight: 700;
+// }
+
+// .auth-listen button i.fas.fa-plus.me-2 {
+//   background: rgba(255, 255, 255, 0.2);
+//   margin-right: 25px;
+//   padding: 7px;
+//   border-radius: 14px;
+// }
+
+// .auth button {
+//   font-weight: 600;
+//   border: 0;
+//   background: white;
+//   font-size: 16px;
+// }
+
+// .auth {
+//   margin-right: 20px;
+// }
+
+// .logo img {
+//   height: 40px;
+// }
+
+// nav {
+//   flex-grow: 1;
+//   margin-left: 20px;
+// }
+
+// ul.menu {
+//   justify-content: end;
+//   list-style: none;
+//   display: flex;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// ul.menu > li {
+//   position: relative;
+//   margin-right: 20px;
+// }
+
+// ul.menu > li > a {
+//   font-family: "Montserrat", sans-serif;
+//   font-weight: 700;
+//   font-size: 21px;
+//   line-height: 27.5px;
+//   color: white;
+//   text-decoration: none;
+//   padding: 10px 15px;
+//   display: block;
+// }
+
+// ul.menu > li.submenu:hover > ul.dropdown {
+//   display: block;
+// }
+
+// ul.dropdown {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   background-color: #444;
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+//   width: 150px;
+//   z-index: 1000;
+// }
+
+// ul.dropdown > li > a {
+//   color: white;
+//   text-decoration: none;
+//   padding: 10px;
+//   display: block;
+// }
+
+// ul.dropdown > li > a:hover {
+//   background-color: #555;
+// }
+
+// .auth a {
+//   color: black;
+//   text-decoration: none;
+//   padding: 10px 15px;
+//   border: 1px solid white;
+//   border-radius: 5px;
+// }
+
+// .auth a:hover {
+//   background-color: white;
+//   color: #333;
+// }
+
+// .menu-toggle {
+//   display: none;
+//   flex-direction: column;
+//   cursor: pointer;
+// }
+
+// .menu-toggle span {
+//   background: black;
+//   border-radius: 2px;
+//   display: block;
+//   height: 3px;
+//   margin: 5px;
+//   width: 25px;
+// }
+
+// .drawer {
+//   position: fixed;
+//   top: 0;
+//   right: -100%;
+//   height: 100%;
+//   width: 250px;
+//   background-color: #333;
+//   color: white;
+//   transition: right 0.3s ease;
+//   z-index: 1000;
+//   padding: 20px;
+// }
+
+// .drawer.active {
+//   right: 0;
+// }
+
+// .drawer .drawer-header {
+//   display: flex;
+//   justify-content: flex-end;
+// }
+
+// .drawer .close-drawer {
+//   background: none;
+//   border: none;
+//   font-size: 24px;
+//   color: white;
+//   cursor: pointer;
+// }
+
+// .drawer .submenu > .dropdown {
+//   display: none;
+// }
+
+// .drawer .submenu.active > .dropdown {
+//   display: block;
+// }
+
+// .divider-col {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .vertical-divider {
+//   width: 1px;
+//   height: 100%;
+//   background-color: #bc1818;
+// }
+
+// @media (max-width: 768px) {
+//   .menu {
+//     display: none;
+//   }
+//   .auth {
+//     display: none;
+//   }
+//   .auth-listen {
+//     display: none;
+//   }
+
+//   .menu-toggle {
+//     display: flex;
+//   }
+
+//   .drawer ul.menu {
+//     display: block;
+//   }
+// }
+
+// /* p {
+//   display: flex;
+//   flex-direction: row;
+// }
+// p:before,
+// p:after {
+//   content: "";
+//   flex: 1 1;
+//   border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+//   margin: auto;
+// } */
+// .otherlogin {
+//   display: flex;
+//   flex-direction: row;
+// }
+// .otherlogin:before,
+// .otherlogin:after {
+//   content: "";
+//   flex: 1 1;
+//   border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+//   margin: auto;
+// }
+
+// .login-icons {
+//   display: flex;
+//   justify-content: space-around;
+//   margin-top: 15px;
+// }
+
+// .login-icons .icon {
+//   color: #444;
+//   font-size: 24px;
+//   transition: color 0.3s;
+// }
+
+// .login-icons .icon:hover {
+//   color: #e33535;
+// }
+
+// .login-icons .icon img {
+//   height: 50px; /* Adjust height */
+//   width: 50px; /* Adjust width */
+// }
+
+// /* opt */
+// .otp-verification-page {
+//   max-width: 400px;
+//   margin: 0 auto;
+//   text-align: center;
+// }
+
+// .countdown-timer {
+//   font-size: 1.5rem;
+//   font-weight: bold;
+//   margin-bottom: 20px;
+// }
+
+// .form-label {
+//   text-align: left;
+//   display: block;
+// }
+
+// .otp-inputs {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 20px;
+// }
+
+// .otp-input {
+//   width: 50px;
+//   height: 50px;
+//   text-align: center;
+//   font-size: 1.5rem;
+//   margin-right: 10px;
+// }
+// </style>
+// verifcation.vue styling ends here
