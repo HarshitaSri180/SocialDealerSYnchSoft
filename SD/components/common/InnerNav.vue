@@ -192,7 +192,5 @@ nav.navbar.navbar-expand-lg.navbar-light.SecondNavbarBackground {
   font-size: 18px;
   cursor: pointer;
 }
-.container-fluid.SecondMenuBar{
-    padding: 18px 26px;
-}
+
 </style>

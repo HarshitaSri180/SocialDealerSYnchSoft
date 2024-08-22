@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <CommonThirdNav/>
-    <div class="container LoginPage">
+    <div class="container">
       <div class="row">
         <div class="col-md-6 mt-5">
           <div class="container">
@@ -62,9 +62,9 @@
         <div class="col-md-1 divider-col">
           <div class="vertical-divider"></div>
         </div>
-        <div class="col-md-5 d-flex align-items-center">
+        <div class="col-md-5">
           <div class="login-image">
-            <img class="dummmyImg " src="@/assets/images/MobileLogin.png" alt="Login Image" />
+            <img class="dummmyImg" src="@/assets/images/MobileLogin.png" alt="Login Image" />
           </div>
         </div>
       </div>
@@ -107,7 +107,6 @@ const submitLoginForm = async () => {
 </script>
 
 <style scoped>
-
 .LoginAccount {
   font-family: Montserrat;
   font-size: 35px;

@@ -99,45 +99,5 @@ const logout = () => {
   font-size: 18px;
   cursor: pointer;
 }
-
-.dropdown-menu {
-  min-width: 100px;
-  max-width: 200px;
-  width: auto;
-  background-color: #e8;
-}
-
-.dropdown-item {
-  padding: 10px 15px;
-  font-size: 14px;
-}
 /* Add your existing styles for the navbar here */
-
-/* Placeholder for the search box */
-.search-box-placeholder-large-screen,
-.search-box-placeholder-small-screen {
-  display: none;
-}
-
-/* Responsive styles */
-@media (max-width: 767px) {
-  .search-box-placeholder-small-screen {
-    display: block;
-    flex: 1;
-  }
-
-  .fixed-search-box {
-    width: 90%;
-  }
-}
-
-@media (min-width: 768px) {
-  .search-box-placeholder-large-screen {
-    display: block;
-  }
-
-  .fixed-search-box {
-    width: 50%;
-  }
-}
 </style>
