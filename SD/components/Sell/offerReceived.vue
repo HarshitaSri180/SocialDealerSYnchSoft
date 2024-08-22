@@ -147,9 +147,7 @@ color: #E8550D;
 
 }
 
-.ticketsDetails{
-  max-width: 1400px;
-}
+
 .AdditionalInfo.d-flex{
   border: 1px solid black;
   border-radius: 15px;

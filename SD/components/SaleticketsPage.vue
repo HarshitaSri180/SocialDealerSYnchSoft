@@ -60,7 +60,5 @@ button.orderId{
  
  
  }
- .ConfirmTicketsTicketsContaine{
-  max-width: 1400px;
- }
+
 </style>

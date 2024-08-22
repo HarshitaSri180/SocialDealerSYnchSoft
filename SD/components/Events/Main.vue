@@ -333,9 +333,7 @@ img.TicketsImg {
   top: 74%;
   left: 6%;
 }
-.ticketsContainer {
-  max-width: 1400px;
-}
+
 .tickets {
   /* padding: 25px; */
   display: flex;

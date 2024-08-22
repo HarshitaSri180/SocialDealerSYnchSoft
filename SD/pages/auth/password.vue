@@ -254,9 +254,7 @@ text-align: left;
 
 
 }
-.PAsswordContainer{
-  max-width: 1455px;
-}
+
 .NextButton{
   padding: 20px 1px;
     width: 100%;

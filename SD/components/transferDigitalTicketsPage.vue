@@ -42,9 +42,7 @@ import SellerInfoRatingComponent from '~/components/SellerInfoRatingComponent.vu
 
 </script>
 <style scoped>
-.TranssferDigitalTicketsContaine{
-  max-width: 1400px;
-}
+
 .ConfirmButton{
   
   border-radius: 17px;

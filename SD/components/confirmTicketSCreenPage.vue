@@ -144,9 +144,7 @@ text-align: left;
 
 
 }
-.TicketsContainerTicketScreen{
-  max-width: 1300px;
-}
+
 .buttonMakeOffer {
     margin-bottom: 180px;
     margin-top: 80px;

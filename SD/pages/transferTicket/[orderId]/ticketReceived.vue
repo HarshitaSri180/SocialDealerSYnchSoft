@@ -102,9 +102,7 @@ button.orderId{
  
  
  }
- .ConfirmTicketsTicketsContaine{
-  max-width: 1400px;
- }
+
  @media screen and (min-width:300px) and (max-width:500px){
   .card.ratingCard{
     width: 21rem !important;

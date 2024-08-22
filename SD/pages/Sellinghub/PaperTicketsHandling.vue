@@ -6,5 +6,5 @@
 <script setup>
 import InnerNav from '~/components/common/InnerNav.vue';
 
-import PaperTicketsHandlingComponent from '~/components/sellingHUbFlow/PaperTicketsHandlingComponent.vue';
+import PaperTicketsHandlingComponent from '~/components/Sell/PaperTicketsHandlingComponent.vue';
 </script>

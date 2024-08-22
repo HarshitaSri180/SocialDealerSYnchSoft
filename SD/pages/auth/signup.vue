@@ -139,7 +139,7 @@ text-align: left;
 
 .signUpform{
   margin: 0px auto;
-  max-width: 1455px;
+ 
 }
 
 

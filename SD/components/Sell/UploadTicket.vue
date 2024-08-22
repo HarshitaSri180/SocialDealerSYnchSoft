@@ -292,9 +292,7 @@ img.paperUpload {
   /* justify-content: center; */
 }
 
-.containerSeventeen {
-  max-width: 1400px;
-}
+
 
 button.StandardTicket {
   border-radius: 13px;

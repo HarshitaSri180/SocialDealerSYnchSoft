@@ -1,9 +1,11 @@
 <template>
+  <Banner/>
 <InnerNav/>
-  <ListingPageComponent/>
+  <Listing/>
 </template>
 <script setup>
-import SecondNav from '~/components/common/InnerNav.vue';
+import Banner from '~/components/Events/Banner.vue';
+import InnerNav from '~/components/common/InnerNav.vue';
 
-import ListingPageComponent from '~/components/sellingHUbFlow/index.vue';
+import Listing from '~/components/Sell/Listing.vue';
 </script>

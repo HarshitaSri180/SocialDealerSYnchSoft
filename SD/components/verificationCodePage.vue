@@ -32,9 +32,7 @@ import PriceDetailComponent from '~/components/PriceDetailComponent.vue';
   margin-bottom: 73px;
 
 }
-.VerificationCodeContaine{
-  max-width: 1400px;
-}
+
 .verificationCodeForTitle {
     text-align: center;
     font-family: Montserrat;

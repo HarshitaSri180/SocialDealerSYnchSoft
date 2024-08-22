@@ -1,7 +1,5 @@
 <template>
-<div class="ListingPageContainer">
-  <p class="ListingPageDesignComponent">*DESIGN*</p>
-</div>
+  <Banner/>
 <div class=" container ListingPageMainContainer ">
   <div class="ListingComponent d-flex justify-content-center gap-4">
     <p class="MyListing active">My Listings (0)</p>
@@ -38,6 +36,7 @@
 </div>
 </template>
 <script>
+import Banner from '~/components/Events/Banner.vue';
 </script>
 <style scoped>
 
@@ -155,18 +154,7 @@ border-bottom:10px solid  #BC1818;
   
 
 }
-.ListingPageDesignComponent{
-  font-family: Montserrat;
-font-size: 102px;
-font-weight: 300;
 
-text-align: center;
-
-
-
-/* background-color: background: #E8550D80; */
-
-}
 .RevenueGeneratedPara {
   width: 100%;
     border-radius: 8px;
@@ -184,14 +172,8 @@ text-align: center;
 .ticketsSold {
     width: 50%;
 }
-.ListingPageMainContainer{
-  max-width: 1400px;
-}
-.ListingPageContainer{
-  height: 250px;
-  width: 100%;
-  background-color:  #E8550D80;
-}
+
+
 @media screen and (min-width:350px) and (max-width:950px){
 
 button.SellTicketsListingPage {
@@ -213,9 +195,7 @@ width: 75%;
 .MyListing{
     font-size: 21px;
 }
-.ListingPageDesignComponent {
-    font-size: 20vh;
-}
+
 }
 
 </style>

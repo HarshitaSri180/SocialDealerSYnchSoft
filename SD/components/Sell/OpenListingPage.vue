@@ -175,9 +175,6 @@ import EventTicketPage from "~/components/Events/Banner.vue";
   margin-top: 89px;
   margin-bottom: 8px;
 }
-.OpenListingContainer {
-  max-width: 1400px;
-}
 
 .RevenueGeneratedParaListigPage {
   font-family: Montserrat;

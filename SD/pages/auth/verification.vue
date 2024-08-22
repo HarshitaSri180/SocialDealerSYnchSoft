@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <CommonThirdNav/>
-    <div class="container">
+    <div class="container  verification">
       <div class="row">
         <div class="col-md-6 mt-5">
           <div class="container">
@@ -180,7 +180,9 @@ text-align: center;
 
 }
 
-
+.container.verification {
+    width: 93%;
+}
 .EnterFourDigitPAra{
   font-family: Montserrat;
 font-size: 21px;

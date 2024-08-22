@@ -107,9 +107,7 @@ const submitLoginForm = async () => {
 </script>
 
 <style scoped>
-.container.LoginPage {
-    max-width: 1400px;
-}
+
 .LoginAccount {
   font-family: Montserrat;
   font-size: 35px;

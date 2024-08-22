@@ -3,9 +3,7 @@
 </template>
 <script></script>
 <style scoped>
-.TicketsContainer {
-  max-width: 1400px;
-}
+
 .RegularBox {
   gap: 11px;
   align-items: center;

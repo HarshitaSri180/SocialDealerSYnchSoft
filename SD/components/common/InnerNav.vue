@@ -23,7 +23,7 @@
           <li class="nav-item fs-5 fw-bold">
             <a class="" href="#"  aria-disabled="true"><button class="SellTicketSecondNav">Sell Tickets</button></a>
           </li>
-          <li class="ListItem" v-if="!user"><a href="/auth/login">Sign in</a></li>
+          <li class="ListItem nav-link" v-if="!user"><a href="/auth/login">Sign in</a></li>
         <li class="ListItem" v-if="user">
           <div class="dropdown ms-2">
             <button

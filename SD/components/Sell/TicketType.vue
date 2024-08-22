@@ -205,9 +205,7 @@ text-align: left;
   line-height: 83.5px;
   text-align: left;
 }
-.selectTicketContainer {
-  max-width: 1400px;
-}
+
 .SelectTicketType {
   font-family: Montserrat;
   font-size: 30px;

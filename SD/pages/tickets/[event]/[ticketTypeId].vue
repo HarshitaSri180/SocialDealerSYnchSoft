@@ -105,9 +105,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.TicketsContainer {
-  max-width: 1400px;
-}
+
 .regularBoxFlex {
 }
 a{

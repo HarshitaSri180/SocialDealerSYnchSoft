@@ -179,7 +179,7 @@ text-align: left;
     margin: 38px 0px;
     justify-content: center;
 }
-.SellerContainer[data-v-92a8aa9b] {
+.SellerContainer {
    
     margin: 0 auto;
     max-width: 50%;

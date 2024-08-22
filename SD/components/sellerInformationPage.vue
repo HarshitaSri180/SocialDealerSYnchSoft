@@ -177,9 +177,7 @@ text-align: left;
     display: flex;
     justify-content: center;
 }
-.SellerInformationContaine{
- max-width: 1400px
-}
+
 .card.ratingCard {
   box-shadow: none;
   

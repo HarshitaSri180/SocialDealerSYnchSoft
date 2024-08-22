@@ -302,9 +302,7 @@ img.TicketsImg {
   top: 74%;
   left: 6%;
 }
-.TicketsContainer {
-  max-width: 1400px;
-}
+
 .tickets {
   /* padding: 25px; */
   display: flex;

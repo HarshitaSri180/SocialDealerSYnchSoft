@@ -255,9 +255,7 @@ line-height: 30.48px;
 text-align: left;
 
 }
-.containerSelectEvent {
-  max-width: 1400px;
-}
+
 .ListingPageContainer {
   height: 250px;
   width: 100%;

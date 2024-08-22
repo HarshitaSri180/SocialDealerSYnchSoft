@@ -2,7 +2,7 @@
     <Html lang="en">
         <Head>
             <Title>Social Dealr</Title>
-            <Meta name="description" content="AI Chats" />
+            <Meta name="description" content="Social Dealr" />
         </Head>
 
         <Body>

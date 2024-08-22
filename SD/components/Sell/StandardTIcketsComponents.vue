@@ -137,10 +137,6 @@ justify-content: space-between;
     border-radius: 9px;
 }
 
-
-.containerSeventeen{
-  max-width: 1400px;
-}
 button.StandardTicket{
   
  

@@ -75,9 +75,7 @@
     background-color: red;
     width: 50px;
 } */
-.LayoutDigitalTicketsContaine{
-  max-width: 1400px;
-}
+
 .sixDigitcodeDescription{
   margin-bottom: 168px;
   font-family: Montserrat;

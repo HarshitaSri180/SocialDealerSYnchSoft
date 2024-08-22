@@ -6,5 +6,5 @@
 <script setup>
 import InnerNav from '~/components/common/InnerNav.vue';
 
-import offerReceived from '~/components/sellingHUbFlow/offerReceived.vue';
+import offerReceived from '~/components/Sell/offerReceived.vue';
 </script>

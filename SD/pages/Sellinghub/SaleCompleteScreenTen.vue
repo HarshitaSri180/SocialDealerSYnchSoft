@@ -5,5 +5,5 @@
 <script setup>
 import InnerNav from '~/components/common/InnerNav.vue';
 
-import SaleCompleteTen from '~/components/sellingHUbFlow/SaleCompleteTen.vue'
+import SaleCompleteTen from '~/components/Sell/SaleCompleteTen.vue'
 </script>

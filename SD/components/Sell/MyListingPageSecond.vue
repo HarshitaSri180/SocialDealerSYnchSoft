@@ -195,9 +195,7 @@ import CardsWithImageComponnets from '~/pages/CardsWithImageComponnets.vue';
   .ticketsSold {
       width: 50%;
   }
-  .ListingPageMainContainer{
-    max-width: 1400px;
-  }
+  
   .ListingPageContainer{
     height: 250px;
     width: 100%;
